@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="ai1.png">
+</head>
+<body>
+    <!-- Open Menu Button -->
+    <button class="open-btn" id="openMenu">&#9776;</button>
+
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" id="closeMenu">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <!-- Content Area -->
+    <!--div class="content"-->
+        <div class="chat-container">
+            <div class="ai-chat-box">
+                <img src="ai.png" alt="" id="aiImage" width="10%">
+                <div class="ai-chat-area">
+               Hello ! How Can I Help you Today?
+                </div>
+               
+            </div>
+                </div>
+                <div class="prompt-area">
+            <input type="text" id="prompt" placeholder="Type here...">
+            <button id="image"><img src="img.svg" alt="">
+            <input type="file" accept="images/*" hidden></button>
+            <button id="submit"><img src="submit.svg" alt=""></button>
+                </div>
+    <!--/div-->
+
+    <script src="index.js"></script>
+</body>
+</html>

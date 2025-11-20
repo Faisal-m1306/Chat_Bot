@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="Icon" href="ai1.png">
+    <style>
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .side-menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .side-menu a:hover {
+            color: #f1f1f1;
+        }
+        
+        .side-menu .close-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        /* Open Menu Button */
+        .open-btn {
+            font-size: 30px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: #111;
+            padding: 15px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+        
+        /* Content Area */
+        .content {
+            margin-left: 20px;
+            padding: 20px;
+        }
+        
+        /* Transition Effect for Content Area */
+        .content h1, .content p {
+            transition: margin-left 0.3s;
+        }
+        
+        .open-btn:hover {
+            color: #555;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(45, 52, 59);
+        }
+        .content{
+            margin-left: 5%;
+            width: 95%;
+            height: 80%;
+            background-color: rgb(45, 52, 59);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            font-size: 20px;
+            overflow: auto;
+            z-index: 0;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: justify;
+            animation: glow 1s ease-in-out infinite alternate;
+            animation: slide 1s;
+        }
+        img{
+            margin-left: 35%;
+            width: 30%;
+        }
+        h5{
+            color: white;
+            font-style: italic;
+            margin-left: 90%;
+        }
+        h4{
+            color: white;
+            margin-left: 90%;
+        }
+        @keyframes glow {
+            0% {
+              text-shadow: 0 0 20px #ffffff;
+            }
+            100% {
+              text-shadow: 0 0 20px #ffffff;
+            }
+        }
+        @keyframes slide {
+            from {
+              transform: translateX(-300px);
+            }
+            to {
+              transform: translateX(0);
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <!-- Open Menu Button -->
+    <button class="open-btn" id="openMenu">&#9776;</button>
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" id="closeMenu">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="content">
+        <h1>About</h1>
+        <p>
+            The chatbot works by processing user input and generating responses based on patterns it has learned from its training data.<br>
+            It’s like a very advanced search engine that can not only retrieve information but also synthesize it and create new text.
+        </p>
+        <p>
+            Here are some of the key capabilities of my chatbot:<br>
+            1. Text Generation:It can write essays, stories, and other creative content.<br>  
+            2. Language Translation: It can translate text between multiple languages.<br>  
+            3. Question Answering:It provides informative answers to a wide range of questions, even if they’re open-ended or unusual.<br>  
+            4. Information Synthesis: It combines information from its training data to create new, coherent responses.
+        </p>
+        <p>
+            While the chatbot is powerful, it does have some limitations:<br>  
+            1. Knowledge Cutoff:Its training data only goes up to September 2021, so it doesn’t know about events or information after that date.<br>  
+            2. No Personal Experiences: It doesn’t have feelings, opinions, or personal experiences.<br>  
+            3. Imperfect Responses: It may occasionally make mistakes, so its answers should always be verified with other sources.
+        </p>
+        <p>
+            It’s important to remember that this chatbot is not sentient or self-aware.<br> 
+            It’s a tool designed to assist and inform, but its responses should be critically evaluated.<br>
+            As AI technology continues to advance, we must use it responsibly and ethically.
+        </p>
+        <h4>Made by</h4>
+        <h5>Faisal, Shivam and Sahil</h5>
+        <div class="qr">
+            <img src="qr.png">
+        </div>
+
+    </div>
+    <script src="about.js"></script>
+</body>
+</html>
